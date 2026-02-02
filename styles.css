@@ -1,0 +1,94 @@
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background: #31f44b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #020501;
+}
+
+body.dark {
+    background: hsl(128, 67%, 12%);
+    color: #eee;
+}
+
+body.dark header {
+    border-bottom-color: #333;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: inherit;
+}
+
+.site-title {
+    align-items: center;
+    margin: 0;
+    font-weight: 700;
+}
+
+main {
+    max-width: 60ch;
+    margin: 0 auto;
+    padding: 1.20rem;
+}
+
+form {
+    display: grid;
+    gap: 0.65rem;
+    max-width: 28rem;
+}
+
+#name {
+    margin-left: 45px;
+}
+
+#email {
+    margin-left: 48px;
+}
+
+#password {
+    margin-left: 17px;
+}
+
+.transparency-main {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 20px;
+    border: 1px solid #ccc
+}
+
+input,
+button {
+    font: inherit;
+    padding: 0.5rem 0.6rem;
+}
+
+:focus-visible {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+
+input:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+input[aria-invalid="true"] {
+    border: 2px solid #b00020;
+}
+
+form.submitted input:invalid {
+    border: 2px solid #991b1b;
+}

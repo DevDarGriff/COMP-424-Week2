@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewpoint" content="width=device-width, initial-scale=1" />
+      <title>Golf Scoresheet</title>
+      <link rel="stylesheet" href="styles.css" />
+      <style>
+          body {
+            background-image: url('golfcourse_background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+          }
+      </style>
+    </head>
+    <body>
+      <header>
+        <p class="site-title">Golf Scoresheet</p>
+        <nav aria-label="Primary">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Courses</a>
+          <a href="#">Scorecards</a>
+          <a href="#">Contact</a>
+        </nav>
+	<button id="theme-toggle" type="button">Toggle theme</button>
+      </header>
+
+      <main class="transparency-main" id="main">
+        <h1>Enhance Your Golf Game</h1>
+          <p>By tracking your golf scores from your favorite courses</p>
+
+        <section aria-labelledby="signup-title">
+          <h2 id="signup-title">Sign up</h2>
+
+          <form id="signupForm" novalidate>
+              <div>
+                  <label for="name">Name:</label>
+                  <input id="name" name="name" required minlength="2" />
+                  <p id="nameError"></p>
+              </div>
+              <div>
+                  <label for="email">Email:</label>
+                  <input id="email" name="email" type="email" required aria-describedby="emailError"/>
+                  <p id="emailError"></p>
+              </div>    
+
+              <div>
+                  <label for="password">Password:</label>
+                  <input id="password" name="password" type="password" required />
+                  <p id="passwordError"></p>
+              </div>
+
+              <div>
+                  <label for="checkbox">Agree to Terms:</label>
+                  <input id="checkbox" name="checkbox" type="checkbox" required />
+                  <p id="checkboxError"></p>
+              </div>
+
+              <button type="submit">Submit</button>
+              <p role="status" id="formMessage"></p>
+          </form>
+         </section>
+        </main>
+
+        <footer>
+          <small>Created by Devon Griffith. Built in CS 424.</small>
+        </footer>
+
+      <script src="app.js"></script>
+    </body>
+</html>
+
+
